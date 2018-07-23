@@ -8,12 +8,15 @@ public class SpawnAddForce : MonoBehaviour {
     public Vector2 force;
     public float deathCount;
     public float speed;
-
+    
     public UnityStandardAssets._2D.PlatformerCharacter2D controller; 
+
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-         StartCoroutine(KillRound());
+
+        StartCoroutine(KillRound());
         controller = UnityStandardAssets._2D.PlatformerCharacter2D.instance;
         if (controller.m_FacingRight)
         {
@@ -27,6 +30,7 @@ public class SpawnAddForce : MonoBehaviour {
             print("fire left");
             return;
         }
+        
     }
 
   
@@ -50,5 +54,7 @@ public class SpawnAddForce : MonoBehaviour {
         rb.AddForce(-force);
     }
 
+   
+   
 
 }

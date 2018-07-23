@@ -39,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1065021449054952}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.61, y: 9.69, z: 0}
+  m_LocalPosition: {x: -5.7681074, y: 5.535204, z: 4.9431677}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -60,7 +60,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 9ac25f23308177e439a021b3b5c9961c, type: 2}
+  - {fileID: 2100000, guid: 14884e657d6b39a45b6fb43c46dd14ce, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -131,7 +131,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 1, g: 0.66526496, b: 0, a: 1}
+  m_Color: {r: 0, g: 1, b: 0, a: 1}
   m_Intensity: 5
   m_Range: 20
   m_SpotAngle: 30
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   force: {x: 0, y: 0}
-  deathCount: 10
-  speed: 10
+  deathCount: 2
+  speed: 16
   controller: {fileID: 114420415775433330, guid: f6a77b5fed63b3643a850b596af1dfd9,
     type: 2}
