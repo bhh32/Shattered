@@ -8,12 +8,7 @@ public class JetpackController : MonoBehaviour
     [SerializeField] float thrust;
     bool jetpacking = false;
     [SerializeField] Rigidbody2D rb;
-
-	// Use this for initialization
-	void Start ()
-    {
-		
-	}
+    [SerializeField] HUD hud;
 
     // Update is called once per frame
     void Update()
@@ -28,6 +23,7 @@ public class JetpackController : MonoBehaviour
         {
             rb.AddRelativeForce(new Vector2(0f, thrust), ForceMode2D.Impulse);
             jetpackFuel -= .25f;
+            hud.UpdateHud(jetpackFuel);
         }
     }
 }
