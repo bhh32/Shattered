@@ -49,7 +49,14 @@ public class NormalController : MonoBehaviour
 
 		if(gravityVal.x == 0)
 		{
-			rb.velocity = new Vector2(xAxis * mSpeed, rb.velocity.y);
+			if(gravityVal.y > 0)
+			{
+				rb.velocity = new Vector2(-xAxis * mSpeed, rb.velocity.y);
+			}
+			else if(gravityVal.y < 0)
+			{
+				rb.velocity = new Vector2(xAxis * mSpeed, rb.velocity.y);
+			}
 		}
 		if(gravityVal.y == 0)
 		{
