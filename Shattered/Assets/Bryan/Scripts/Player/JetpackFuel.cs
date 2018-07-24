@@ -9,11 +9,6 @@ public class JetpackFuel : MonoBehaviour
 
     public JetpackController jetpackCont;
 
-    private void Awake()
-    {
-        jetpackCont = GameObject.Find("Player").GetComponent<JetpackController>();
-    }
-
     
     
 }
