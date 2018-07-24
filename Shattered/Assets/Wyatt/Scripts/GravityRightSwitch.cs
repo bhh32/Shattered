@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GravityUpSwitch : MonoBehaviour 
-{
+public class GravityRightSwitch : MonoBehaviour {
+
 	public float radius;
 	public bool CanSwitch;
 	
@@ -28,7 +28,7 @@ public class GravityUpSwitch : MonoBehaviour
 		{
 			if(Input.GetKey(KeyCode.Space))
 			{
-				Physics2D.gravity = new Vector2 (0, 9.81f);
+				Physics2D.gravity = new Vector2 (9.81f, 0);
 			}
 		}
 	}	
@@ -37,4 +37,5 @@ public class GravityUpSwitch : MonoBehaviour
 		Gizmos.color = Color.yellow;
 		Gizmos.DrawSphere(gameObject.transform.position, radius);
 	}
+
 }

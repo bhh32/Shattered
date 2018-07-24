@@ -8,19 +8,31 @@ public class PlayerAnim : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetAxis("Horizontal") != 0f && Input.GetKeyDown(KeyCode.W) ||
-                                                Input.GetKeyDown(KeyCode.UpArrow))
+        float horiz = Input.GetAxis("Horizontal");
+
+        Debug.Log(horiz);
+
+        if (horiz != 0f && !(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)))
         {
-            anim.SetBool("isJumping", false);
+            anim.SetBool("isJetpacking", false);
             anim.SetBool("isWalking", true);
+            anim.SetBool("isJumping", false);
         }
         else if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
+            anim.SetBool("isJetpacking", false);
             anim.SetBool("isWalking", false);
             anim.SetBool("isJumping", true);
         }
+        else if (Input.GetKey(KeyCode.Space))
+        {
+            anim.SetBool("isJetpacking", true);
+            anim.SetBool("isWalking", false);
+            anim.SetBool("isJumping", false);
+        }
         else
         {
+            anim.SetBool("isJetpacking", false);
             anim.SetBool("isWalking", false);
             anim.SetBool("isJumping", false);
         }
