@@ -43,8 +43,14 @@ public class TestController : MonoBehaviour
         // Set the origin of the raycast position
         Vector2 origin = new Vector2(transform.position.x, transform.position.y - (transform.position.y / 2f));
 
+        Ray ray = new Ray(new Vector3(origin.x, origin.y, 0f), Vector3.down);
+
+        //Debug.DrawRay(ray.origin, ray.direction, Color.green);
+
         // Set the hit position of the raycast
         RaycastHit2D hit = Physics2D.Raycast(origin, Vector2.down, groundRayLength, groundLayer);
+
+        Debug.DrawLine(ray.origin, hit.point, Color.green);
 
         // If the raycast hits the ground layer the player is grounded
         if (hit.collider != null)
