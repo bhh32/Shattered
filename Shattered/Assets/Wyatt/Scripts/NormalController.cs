@@ -66,7 +66,7 @@ public class NormalController : MonoBehaviour
 			}
 			else if (gravityDir.x < 0)
 			{
-				rb.velocity = new Vector2(rb.velocity.x, xAxis * mSpeed);
+				rb.velocity = new Vector2(rb.velocity.x, -xAxis * mSpeed);
 			}
 		}
 		
@@ -74,7 +74,7 @@ public class NormalController : MonoBehaviour
 		{
 			if(IsGrounded() == true)
 			{
-				rb.AddForce(transform.up * 7, ForceMode2D.Impulse);
+				rb.AddForce(transform.up * 10, ForceMode2D.Impulse);
 			}
 		}
 	}
@@ -98,10 +98,10 @@ public class NormalController : MonoBehaviour
 		return false;
 	}
 	
-	void OnDrawGizmos()
-	{
-		Gizmos.color = Color.yellow;
-		Gizmos.DrawRay(gameObject.transform.position, gravityDir * Distance);
-	}
+	// void OnDrawGizmos()
+	// {
+	// 	Gizmos.color = Color.yellow;
+	// 	Gizmos.DrawRay(gameObject.transform.position, gravityDir * Distance);
+	// }
 
 }

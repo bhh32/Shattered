@@ -32,9 +32,9 @@ public class GravityUpSwitch : MonoBehaviour
 			}
 		}
 	}	
-	void OnDrawGizmos()
-	{
-		Gizmos.color = Color.yellow;
-		Gizmos.DrawSphere(gameObject.transform.position, radius);
-	}
+	// void OnDrawGizmos()
+	// {
+	// 	Gizmos.color = Color.yellow;
+	// 	Gizmos.DrawSphere(gameObject.transform.position, radius);
+	// }
 }
