@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Ground
   - Floor
+  - onlyTrigger
+  - 2ddl
+  - FireBall
   layers:
   - Default
   - TransparentFX
@@ -18,7 +21,6 @@ TagManager:
   - PostProcessing
   - Ground
   - Floor
-  - 
   - 
   - 
   - 

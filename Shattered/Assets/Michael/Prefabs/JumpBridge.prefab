@@ -24,9 +24,9 @@ GameObject:
   - component: {fileID: 58025220515792590}
   - component: {fileID: 50886656781080104}
   - component: {fileID: 61424992964571062}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RopePlayeConnection (5)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45,9 +45,9 @@ GameObject:
   - component: {fileID: 50326004954160984}
   - component: {fileID: 231216986313514556}
   - component: {fileID: 61676500473320188}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RopePlayeConnection (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66,9 +66,9 @@ GameObject:
   - component: {fileID: 50511653772993402}
   - component: {fileID: 231101916657487552}
   - component: {fileID: 61210035233289874}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RopePlayeConnection (4)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -87,9 +87,9 @@ GameObject:
   - component: {fileID: 50024925972996150}
   - component: {fileID: 231257069143793572}
   - component: {fileID: 61062166674812176}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RopePlayeConnection
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -108,9 +108,9 @@ GameObject:
   - component: {fileID: 50105653027561024}
   - component: {fileID: 231436702658428126}
   - component: {fileID: 61426021962583206}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RopePlayeConnection (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -129,9 +129,9 @@ GameObject:
   - component: {fileID: 58683802374279938}
   - component: {fileID: 231706676677401368}
   - component: {fileID: 61862542130050878}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: JumpBridge
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -150,9 +150,9 @@ GameObject:
   - component: {fileID: 50554408203346892}
   - component: {fileID: 231335477213900692}
   - component: {fileID: 61756497337005406}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RopePlayeConnection (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -202,8 +202,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1424500277451470}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.16, y: 10.52, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0.000008726646, w: 1}
+  m_LocalPosition: {x: -59.39827, y: -28.552069, z: 0.75}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 4214837080353352}
